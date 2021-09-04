@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/clipboard-website-with-html5-and-css3-RFN0UNZfm)
+- Live Site URL: [Live Website](https://clipboard-app-website.netlify.app)
 
 ## My process
 
