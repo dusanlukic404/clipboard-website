@@ -1,0 +1,427 @@
+/* Font Style */
+
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+/* Global Styles */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  font-family: "Bai Jamjuree", sans-serif;
+  --clr-cyan: hsl(171, 66%, 44%);
+  --clr-light-blue: hsl(233, 100%, 69%);
+  --clr-dark-grayish-blue: hsl(210, 10%, 33%);
+  --clr-grayish-blue: hsl(201, 11%, 66%);
+  scroll-behavior: smooth;
+  scrollbar-color: var(--clr-cyan) #fff;
+  scrollbar-width: thin;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--clr-cyan);
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+html::-webkit-scrollbar {
+  width: thin;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--clr-dark-grayish-blue);
+  font-weight: 600;
+}
+
+p {
+  color: var(--clr-grayish-blue);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1::selection {
+  background-color: var(--clr-cyan);
+  color: white;
+}
+h2::selection {
+  background-color: var(--clr-cyan);
+  color: white;
+}
+h3::selection {
+  background-color: var(--clr-cyan);
+  color: white;
+}
+h4::selection {
+  background-color: var(--clr-cyan);
+  color: white;
+}
+p::selection {
+  background-color: var(--clr-cyan);
+  color: white;
+}
+a::selection {
+  background-color: var(--clr-cyan);
+  color: white;
+}
+li::selection {
+  background-color: var(--clr-cyan);
+  color: white;
+}
+
+.btn {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0.8em 2em;
+  border-radius: 50px;
+  border: none;
+  display: inline-block;
+  margin-right: 1em;
+  transition: opacity 250ms ease-in;
+  font-family: inherit;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.btn-1:focus {
+  outline-offset: 5px;
+  outline: 3px solid var(--clr-cyan);
+}
+
+.btn-2:focus {
+  outline-offset: 5px;
+  outline: 3px solid var(--clr-light-blue);
+}
+
+/* Header */
+
+.main-head {
+  text-align: center;
+  background-image: url(./images/bg-header-desktop.png);
+  background-size: cover;
+}
+
+.main-head img {
+  padding: 5.5rem 0 2.5rem 0;
+  animation: logo 800ms ease-in-out forwards;
+}
+
+.main-head p {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1em 0 2em 0;
+}
+
+.two-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-1 {
+  background-color: var(--clr-cyan);
+  border-bottom: 3px solid hsl(171, 66%, 34%);
+  box-shadow: 0 2px 8px hsl(171, 66%, 64%);
+}
+
+.btn-2 {
+  background-color: var(--clr-light-blue);
+  border-bottom: 3px solid hsl(233, 100%, 59%);
+  box-shadow: 0 2px 8px var(--clr-light-blue);
+}
+
+/* Track Section */
+
+.snippet-track {
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.snippet-track p {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1em 0 4.5em 0;
+}
+
+.keep-track {
+  display: flex;
+}
+
+.keep-track img {
+  transform: translateX(-15%);
+}
+
+.features {
+  margin: 4em 6em;
+}
+
+.feature {
+  max-width: 350px;
+}
+
+.feature h3 {
+  padding-bottom: 0.5em;
+}
+
+.feature:not(:last-child) {
+  margin-bottom: 3em;
+}
+
+/* Access Section */
+
+.access {
+  text-align: center;
+  margin-top: 8.5rem;
+  margin-bottom: 10rem;
+}
+
+.access > p {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 1.3em 0 5em 0;
+}
+
+.devices {
+  filter: drop-shadow(0 5px 12px rgba(0, 0, 0, 0.24));
+  margin-bottom: 3rem;
+}
+
+.opportunities {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 8em;
+}
+
+.opportunities > * {
+  width: 100%;
+}
+
+.opportunities > img {
+  margin-bottom: 3rem;
+}
+
+.opportunities h3 {
+  padding: 1em 0 0.5em 0;
+}
+
+.opportunities p {
+  max-width: 350px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.plain-text img {
+  width: 44px;
+}
+
+/* Companies */
+
+.companies {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Available */
+
+.available {
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
+.available p {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1em 0 2em 0;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5rem;
+  background-color: hsl(201, 11%, 96%);
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 1rem 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-dark-grayish-blue);
+}
+
+.logo-link img {
+  max-width: 70px;
+}
+
+.social svg {
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: fill 200ms ease-in;
+}
+
+.links a:hover {
+  color: var(--clr-cyan);
+}
+
+svg:hover {
+  fill: var(--clr-cyan);
+}
+
+/* Media Query */
+
+@media (max-width: 400px) {
+  /* Global */
+
+  html {
+    font-size: 15px;
+  }
+
+  /* Header */
+  .main-head {
+    background-image: url(./images/bg-header-mobile.png);
+    background-size: cover;
+  }
+  .main-head h1 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .main-head p {
+    width: 80%;
+  }
+
+  /* Header buttons */
+
+  .two-buttons {
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .btn-1 {
+    margin-top: 1rem;
+    margin-bottom: 1.7rem;
+  }
+
+  /* Track Section */
+
+  .snippet-track {
+    padding-top: 10rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .snippet-track h2 {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .keep-track {
+    flex-direction: column;
+    text-align: center;
+  }
+  .keep-track img {
+    transform: translateX(0);
+    padding: 0 2.5rem;
+  }
+  .features {
+    margin: 3.5rem auto;
+    width: 75%;
+  }
+
+  /* Access Section */
+
+  .access h2 {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .access p {
+    width: 80%;
+    padding-bottom: 3.5rem;
+    padding-top: 1rem;
+  }
+  .devices {
+    width: 90%;
+    padding-bottom: 1rem;
+  }
+  .opportunities {
+    flex-direction: column;
+  }
+
+  /* Companies */
+
+  .companies {
+    flex-direction: column;
+  }
+  .company + .company {
+    margin-top: 4rem;
+  }
+
+  /* Available */
+
+  .available h2 {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .available p {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* Footer */
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  ul {
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  li {
+    padding-bottom: 0.7rem;
+  }
+  .social a {
+    margin-left: 1rem;
+  }
+}
+
+/* Animation */
+
+@keyframes logo {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
