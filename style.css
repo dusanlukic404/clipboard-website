@@ -161,6 +161,8 @@ li::selection {
 .snippet-track {
   text-align: center;
   padding-top: 10rem;
+
+  animation: slideToTop 800ms ease-in-out forwards;
 }
 
 .snippet-track p {
@@ -181,12 +183,19 @@ li::selection {
   margin: 4em 6em;
 }
 
-.feature {
-  max-width: 350px;
-}
-
 .feature h3 {
   padding-bottom: 0.5em;
+}
+
+.feature {
+  max-width: 350px;
+  opacity: 1;
+  transition: all 500ms ease-in-out;
+}
+
+.feature--hidden {
+  opacity: 0;
+  transform: translateX(100%);
 }
 
 .feature:not(:last-child) {
@@ -416,6 +425,16 @@ svg:hover {
   0% {
     opacity: 0;
     transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideToTop {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
   }
   100% {
     opacity: 1;
