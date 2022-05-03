@@ -198,7 +198,7 @@ li::selection {
 
 .features {
   margin: 4em 6em;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 .feature h3 {
