@@ -52,6 +52,16 @@ h1 {
 
 h2 {
   font-size: clamp(2.4rem, 3vw + 1rem, 3.4rem);
+  transition: all 400ms ease-in-out;
+}
+
+img {
+  max-width: 100%;
+}
+
+.h2--hidden {
+  opacity: 0;
+  transform: translateY(100%);
 }
 
 h3 {
@@ -147,6 +157,9 @@ li::selection {
 .two-buttons {
   display: flex;
   justify-content: center;
+
+  width: min(50rem, 75%);
+  margin-inline: auto;
 }
 
 .btn-1 {
@@ -185,6 +198,7 @@ li::selection {
 
 .features {
   margin: 4em 6em;
+  overflow-y: hidden;
 }
 
 .feature h3 {
@@ -193,13 +207,12 @@ li::selection {
 
 .feature {
   max-width: 350px;
-  opacity: 1;
   transition: all 500ms ease-in-out;
 }
 
 .feature--hidden {
   opacity: 0;
-  transform: translateX(100%);
+  transform: translateY(100%);
 }
 
 .feature:not(:last-child) {
@@ -227,8 +240,7 @@ li::selection {
 .opportunities {
   display: flex;
   justify-content: center;
-  max-width: 1200px;
-  margin: 0 auto;
+  margin-inline: auto;
   padding-bottom: 8em;
 }
 
@@ -336,8 +348,8 @@ svg:hover {
   /* Header buttons */
   .two-buttons {
     flex-direction: column;
-    width: 75%;
-    margin: 0 auto;
+    /* width: 75%; */
+    /* margin: 0 auto; */
   }
   .btn-1 {
     margin-top: 1rem;
