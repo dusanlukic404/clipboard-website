@@ -198,7 +198,6 @@ li::selection {
 
 .features {
   margin: 4em 6em;
-  /* overflow-y: hidden; */
 }
 
 .feature h3 {
@@ -212,7 +211,7 @@ li::selection {
 
 .feature--hidden {
   opacity: 0;
-  transform: translateY(100%);
+  transform: translateX(100%);
 }
 
 .feature:not(:last-child) {
